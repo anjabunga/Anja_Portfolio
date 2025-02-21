@@ -28,10 +28,22 @@ const Resume = () => {
                     <div className="row">
                         <div className="col-xl-10">
                             <div className="resume-wrapper wow fadeInUp delay-0-2s">
-                            <Card year={"Oct 2024 - Mar 2025"} title={"Maxy Academy"} institution={"Front-End Developer"} description={"Concentration: Mobile Developer, Front-End Developer, Back-End Developer, Website Developer"} />
+                                <Card year={"Oct 2024 - Mar 2025"} title={"Maxy Academy"} institution={"Front-End Developer"} description={"Concentration: Mobile Developer, Front-End Developer, Back-End Developer, Website Developer"} />
                                 <Card year={"Oct 2024 - Jan 2025"} title={"Citilink Indonesia"} institution={"Learning Management System - System Developer Intern"} description={"Concentration: Mobile Developer, Front-End Developer, Back-End Developer, Website Developer"} />
                                 <Card year={"Feb 2024 - May 2024"} title={"International Office of UPNVJ"} institution={"Administration and Partnership Intern"} description={"Concentration: Mathematics, Sciences"} />
     
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+
+                    <div className="section-title mb-40 wow fadeInUp delay-0-2s">
+                        <h2>Honor</h2>
+                    </div>
+                    <div className="row">
+                        <div className="col-xl-10">
+                            <div className="resume-wrapper wow fadeInUp delay-0-2s">
+                                <Card year={"Nov 2024 - Apr 2025"} title={"XL Axiata"} institution={"Female Future Leader Batch 1 Awardee"} description={"Concentration: Self-Development, Women Empowerment, Soft Skills"} />
                             </div>
                         </div>
                     </div>
