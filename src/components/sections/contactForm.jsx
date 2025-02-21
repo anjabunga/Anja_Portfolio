@@ -1,61 +1,41 @@
-import React from 'react'
-import { RiBuilding2Line, RiHeadphoneLine, RiMailLine, RiMailOpenLine } from '@remixicon/react'
+import React from 'react';
+import { RiBuilding2Line, RiHeadphoneLine, RiMailLine, RiMailOpenLine } from '@remixicon/react';
+
 const ContactForm = () => {
     return (
         <section id="contact" className="contact-area">
             <div className="container">
                 <div className="container-inner">
                     <div className="row">
-                     
+
                         <div className="col-lg-12">
                             <ul className="extra-skills wow fadeInUp delay-0-2s pb-30">
                                 <li><i><RiBuilding2Line size={16} /></i>Jakarta, Indonesia</li>
-                                <li><i><RiMailOpenLine size={16} /></i>Email:bungabunga0603@gmail.com</li>
+
+                                {/* WhatsApp Chat Link */}
+                                <li>
+                                    <i><RiHeadphoneLine size={16} /></i>
+                                    <a href="https://wa.me/6281537460072" target="_blank" rel="noopener noreferrer">
+                                        Chat via WhatsApp
+                                    </a>
+                                </li>
+
+                                {/* Email Link */}
+                                <li>
+                                    <i><RiMailOpenLine size={16} /></i>
+                                    <a href="mailto:bungabunga0603@gmail.com">Email: bungabunga0603@gmail.com</a>
+                                </li>
                             </ul>
-                            <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
-                                <form id="contactForm" className="contactForm" name="contactForm" action="assets/php/form-process.php" method="post">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <div className="form-group">
-                                                <label htmlFor="name">Full Name</label>
-                                                <input type="text" id="name" name="name" className="form-control" defaultValue="" placeholder="Name" required="" data-error="Please enter your Name" />
-                                                <label htmlFor="name" className="for-icon"><i className="far fa-user"></i></label>
-                                                <div className="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <div className="form-group">
-                                                <label htmlFor="email">Email Address</label>
-                                                <input type="email" id="email" name="email" className="form-control" defaultValue="" placeholder="E-Mail" required="" data-error="Please enter your Email" />
-                                                <label htmlFor="email" className="for-icon"><i className="far fa-envelope"></i></label>
-                                                <div className="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="form-group">
-                                                <label htmlFor="message">Your Message</label>
-                                                <textarea name="message" id="message" className="form-control" rows="4" placeholder="Write Your message" required="" data-error="Please Write your Message"></textarea>
-                                                <div className="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="form-group mb-0">
-                                                <button type="submit" className="theme-btn">
-                                                    Send Me Message <i><RiMailLine size={16} /></i>
-                                                </button>
-                                                <div id="msgSubmit" className="hidden"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+
+                    
+
                         </div>
-                      
+
                     </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default ContactForm
+export default ContactForm;

@@ -4,7 +4,7 @@ import work_3 from "../../assets/videos/projects/BPhone.mp4"
 import work_4 from "../../assets/videos/projects/LaporPak.mp4"
 import work_5 from "../../assets/videos/projects/NoteApp.mp4"
 
-export const projectsData = [
+export const projectsDataPre = [
     {
         id: 1,
         src: work_1,

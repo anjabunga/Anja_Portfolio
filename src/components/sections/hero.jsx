@@ -19,8 +19,11 @@ const Hero = () => {
                             <h1>I am a Front-End web developer and tech enthusiast in crafting intuitive experiences on websites.</h1>
                             <h2>Hi, I'm Anja, a frontend web developer specializing in crafting seamless and engaging user interfaces for web applications.</h2>
                             <div className="hero-btns">
-                                <Link to="/contact" className="theme-btn">Get a look to my CV <i><RiDownloadLine size={16}/></i></Link>
+                                 <a href="https://drive.google.com/file/d/1xpZIFCUrYc8p0jHslnjMfVGP3J06O-HR/view?usp=sharing" className="theme-btn" target="_blank" rel="noopener noreferrer">
+                                     Get a look to my CV <i><RiDownloadLine size={16}/></i>
+                                </a>
                             </div>
+
                         </div>
                      
                     </div>

@@ -12,7 +12,7 @@ const Portfolio = () => {
                 </div>
                 <div className="container-fluid">
                     <div className="row g-4 portfolio-grid">
-                        {projectsData.map(({ category, id, size, src, title, description }) => (
+                        {projectsData.map(({ id, size, src, title, description }) => (
                             <div 
                                 key={id} 
                                 className={`${size === "large" ? "col-md-6 col-xl-6" : "col-md-6 col-xl-4"} portfolio-item category-${id}`}

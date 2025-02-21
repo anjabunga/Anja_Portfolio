@@ -4,7 +4,7 @@ import AboutCount from '../components/sections/about/aboutCount'
 import Summary from '../components/sections/about/summary'
 import Resume from '../components/sections/resume'
 import Services from '../components/sections/services'
-import CallToAction from '../components/sections/callToAction'
+
 
 const About = () => {
 
@@ -14,7 +14,6 @@ const About = () => {
       <Summary />
       <Resume />
       <Services />
-      <CallToAction />
       <ScrollRestoration />
     </>
   )

@@ -1,6 +1,6 @@
 import React from 'react';
 import workScribble from "../../assets/images/custom/work-scribble.svg";
-import { projectsData } from '../../utlits/fackData/projectData';
+import { projectsDataPre } from '../../utlits/fackData/projectData_preview';
 import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
@@ -12,7 +12,7 @@ const Portfolio = () => {
                 </div>
                 <div className="container-fluid">
                     <div className="row g-4 portfolio-grid">
-                        {projectsData.map(({ id, size, src, title, description }) => (
+                        {projectsDataPre.map(({ id, size, src, title, description }) => (
                             <div 
                                 key={id} 
                                 className={`${size === "large" ? "col-md-6 col-xl-6" : "col-md-6 col-xl-4"} portfolio-item category-${id}`}
@@ -68,7 +68,7 @@ const Portfolio = () => {
                     align-items: center;
                     opacity: 0;
                     transition: opacity 0.3s ease;
-                    padding: 20px;
+                    padding: 10px;
                     text-align: center;
                 }
                 .portfolio-box:hover .portfolio-overlay {
@@ -77,12 +77,13 @@ const Portfolio = () => {
                 .overlay-title {
                     font-size: 1.5rem;
                     font-weight: bold;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                     color: #fff;
                 }
                 .overlay-description {
                     font-size: 1rem;
                     color: #ddd;
+                    margin: 0;
                 }
             `}</style>
         </>
